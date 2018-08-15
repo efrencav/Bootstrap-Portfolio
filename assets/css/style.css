@@ -1,3 +1,10 @@
+body {
+    margin: 0 auto 0 auto;    
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /* Headings */
 h1 {font-size:40px; line-height:45px; }
@@ -106,14 +113,14 @@ footer {
 }
 
 /* columns */
-#leftColumn {
+.leftColumn {
     margin: 10px 0 20px 0;
     padding:0;
     float: left;
     width: 30%;
 }
 
-#rightColumn {
+.rightColumn {
     width: 68%;
     margin:0;
     padding:0;
@@ -182,11 +189,11 @@ input[type=email] {
 /* Portfolio */
 .container {
     position: relative;
-    width: 46%;
     margin: 5px;
     float: left;
     padding: 0 8px;
     display: block;
+    margin: 0 auto, auto 0;
 }
 
 .overlay {
@@ -238,10 +245,6 @@ div.desc {
     padding: 15px;
     text-align: center;
     text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .responsive {
