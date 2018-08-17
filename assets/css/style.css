@@ -165,9 +165,10 @@ h6 {font-size:25px; line-height:30px;}
 }
 
 /* sticky-top overwrite */
-.sticky-top {
+.sticky {
     position: fixed;
     position: sticky;
     top: 0;
     z-index: 1020;
 }
+
