@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags-->
+    <!-- required meta tags-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Efren Cavazos - Bootstrap Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"
-</head>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
 
+    <!-- bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+</head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-teal static-top">
+    <header>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-charcoal-gray sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Efren Cavazos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
@@ -30,43 +33,77 @@
                 </div>
 
         </div>        
-    </nav>    
-        <section class="content-wrapper">
-            <header>
-                <h1 class="teal">About Me</h1>
-                <hr class="bg-teal">
-            </header>
-            <div id="col-sm-4 sidenav leftColumn">
-                <img class="profileImage" src="assets/images/efren.jpg" alt="Efren Cavazos">
+    </nav>
+    <!-- end navigation  -->
+    </header>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/1920x1080.png?auto=yes&bg=666&fg=444&text=first slide" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/1920x1080.png?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/1920x1080.png?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+              </div>
             </div>
-            <div id="col-sm-8 rightColumn">
-                <p>Over 17 years of professional experience in Graphic Design, exposed to most of the creative disciplines and information that a substantial designer 
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- end carousel -->
+        <section class="content-wrapper bg-white">
+            <div class="container">
+                <div class="row">
+                    <!-- feature details -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom xs-text-center">
+                    </div>
+                </div>
+            </div>
+                <header>
+                        <h5 class="text-center text-uppercase alt-font font-weight-700 margin-100px-top margin-75px-bottom">About Me</h5>
+                    </header>
+                <p class="text-center text-large line-height-32 padding-100px-bottom">Over 17 years of professional experience in Graphic Design, exposed to most of the creative disciplines and information that a substantial designer 
                     must master. The knowledge that I have gained has prepared me to be a rigorous thinker, a good problem solver whose strong design skills are the 
                     most critical aspect of Visual Communications. The sum of my past work and education has prepared me for both the fast-paced and the creative environment 
                     that I believe is necessary for a successful career in graphic design.</p>
-                    <br>
-                    <a href="https://www.linkedin.com/in/efrencavazos/">link here</a>
-                    <br>
-                    <p>A partial list of clients include:</p>
-                    <ul>
-                        <li>Direct Buy</li>
-                        <li>Federal Reserve Bank of Chicago</li>
-                        <li>Healthcare providers in the Texas Medical Center</li>
-                        <li>Houston Zoological Gardens</li>
-                        <li>Lowe's Home Improvement Stores</li>
-                        <li>The City of New Orleans - French Quarter District</li>
-                        <li>The Fountain of Praise Church</li>
-                        <li>The Home Depot Home Improvement Stores</li>
-                        <li>The Houston Community College System</li>
-                    </ul>
             </div>
         </section>
-        <footer class="container-fluid text-center">
-            <p>Footer text</p>
+        <footer class="container-fluid bg-charcoal-gray text-center padding-100px-top padding-100px-bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- start contact information -->
+                    <div class="col-md-6 col-sm-4 col-xs-12">
+                        <div class="alt-font text-white text-uppercase margin-20px-bottom font-weight-600">contact information</div>
+                        <div class="text-uppercase text-dark-gray line-height-24"><strong class="orange">Cellphone: </strong>832-370-7322</div>
+                        <div class="text-dark-gray line-height-24"><strong class="orange text-uppercase">Email: </strong>efren.cavazos@gmail.com</div>
+                    </div>
+                    <!-- end contact information -->
+                    <!-- start social media -->
+                    <div class="col-md-6 col-sm-4 col-xs-12 align-left">
+                        <div class="alt-font text-white text-uppercase margin-20px-bottom font-weight-600">contact information</div>
+                        <div class="text-uppercase text-dark-gray line-height-24"><strong class="orange">Cellphone: </strong>832-370-7322</div>
+                        <div class="text-dark-gray line-height-24"><strong class="orange text-uppercase">Email: </strong>efren.cavazos@gmail.com</div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </nav>
     <!-- Bootstrap JS-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
