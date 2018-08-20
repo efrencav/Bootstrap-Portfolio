@@ -137,8 +137,23 @@ h6 {font-size:25px; line-height:30px;}
 .padding-75px-bottom {padding-bottom: 75px;}
 .padding-100px-bottom {padding-bottom: 100px;}
 
-/* overall padding */
+/* padding options */
 .no-padding {padding:0 !important}
+.no-padding-lr {padding-left: 0 !important; padding-right: 0 !important;}
+.no-padding-tb {padding-top: 0 !important; padding-bottom: 0 !important;}
+.no-padding-top {padding-top: 0 !important;}
+.no-padding-bottom {padding-bottom: 0 !important;}
+.no-padding-left {padding-left: 0 !important;}
+.no-padding-right {padding-right: 0 !important;}
+
+/* position options */
+.position-inherit {position: inherit !important}
+.position-relative {position:relative !important}
+.position-absolute {position: absolute !important}
+.position-fixed {position: fixed !important}
+.position-right {right: 0 !important}
+.position-left {left:0 !important}
+.position-top {top:0 !important}
 
 /* opacity */
 .opacity1 {opacity:.1}
@@ -160,6 +175,10 @@ h6 {font-size:25px; line-height:30px;}
     left: 0;
 }
 
+/* feature box */
+.feature-1 {padding-left: 75px;}
+.feature-1 i {position: absolute; top: 0; left:0;}
+
 /* jumbotron overwrite */
 .jumbotron {
     padding: 2rem 1rem;
@@ -167,11 +186,52 @@ h6 {font-size:25px; line-height:30px;}
     border-radius: 0; /* removed radius border */
 }
 
-/* sticky-top overwrite */
-.sticky {
-    position: fixed;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
+/* image options */
+.cover-background {
+    position: relative !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
+/* ========================
+PORTFOLIO
+=========================== */
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
